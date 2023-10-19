@@ -1,0 +1,94 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>904b0fd5-5100-4fc9-97e7-f40509de7f0a</ProjectGuid>
+    <ProjectHome>.</ProjectHome>
+    <StartupFile>src\Main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>Wirtualny Swiat Python</Name>
+    <RootNamespace>Wirtualny Swiat Python</RootNamespace>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="src\" />
+    <Folder Include="src\GUI\" />
+    <Folder Include="src\GUI\__pycache__\" />
+    <Folder Include="src\Helper\" />
+    <Folder Include="src\Helper\__pycache__\" />
+    <Folder Include="src\Simulation\" />
+    <Folder Include="src\Simulation\Organisms\" />
+    <Folder Include="src\Simulation\Organisms\Animals\" />
+    <Folder Include="src\Simulation\Organisms\Animals\__pycache__\" />
+    <Folder Include="src\Simulation\Organisms\Plants\" />
+    <Folder Include="src\Simulation\Organisms\Plants\__pycache__\" />
+    <Folder Include="src\Simulation\Organisms\__pycache__\" />
+    <Folder Include="src\Simulation\__pycache__\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="src\GUI\Application.py" />
+    <Compile Include="src\GUI\Visualization.py" />
+    <Compile Include="src\Helper\FilesManager.py" />
+    <Compile Include="src\Helper\NotificationManager.py" />
+    <Compile Include="src\Helper\Vector2D.py" />
+    <Compile Include="src\Main.py" />
+    <Compile Include="src\Simulation\Organisms\Animal.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Antelope.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\CyberSheep.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Fox.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Human.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Sheep.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Turtle.py" />
+    <Compile Include="src\Simulation\Organisms\Animals\Wolf.py" />
+    <Compile Include="src\Simulation\Organisms\Organism.py" />
+    <Compile Include="src\Simulation\Organisms\Plant.py" />
+    <Compile Include="src\Simulation\Organisms\Plants\Belladonna.py" />
+    <Compile Include="src\Simulation\Organisms\Plants\Dandelion.py" />
+    <Compile Include="src\Simulation\Organisms\Plants\Grass.py" />
+    <Compile Include="src\Simulation\Organisms\Plants\Guarana.py" />
+    <Compile Include="src\Simulation\Organisms\Plants\Hogweed.py" />
+    <Compile Include="src\Simulation\World.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="src\GUI\__pycache__\Application.cpython-39.pyc" />
+    <Content Include="src\GUI\__pycache__\Visualization.cpython-39.pyc" />
+    <Content Include="src\Helper\__pycache__\FilesManager.cpython-39.pyc" />
+    <Content Include="src\Helper\__pycache__\NotificationManager.cpython-39.pyc" />
+    <Content Include="src\Helper\__pycache__\Vector2D.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Antelope.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\CyberSheep.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Fox.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Human.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Sheep.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Turtle.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Animals\__pycache__\Wolf.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Plants\__pycache__\Belladonna.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Plants\__pycache__\Dandelion.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Plants\__pycache__\Grass.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Plants\__pycache__\Guarana.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\Plants\__pycache__\Hogweed.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\__pycache__\Animal.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\__pycache__\Organism.cpython-39.pyc" />
+    <Content Include="src\Simulation\Organisms\__pycache__\Plant.cpython-39.pyc" />
+    <Content Include="src\Simulation\__pycache__\World.cpython-39.pyc" />
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>
